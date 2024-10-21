@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Random;
 
 public class Main extends JPanel implements ActionListener, KeyListener {
-    private final Timer timer;
+    private Timer timer;
     private Timer robotSpawner;
     private Timer cloudMover;
     private int heroX = 100;
@@ -16,19 +16,19 @@ public class Main extends JPanel implements ActionListener, KeyListener {
     private boolean jumping = false;
     private boolean moveLeft = false;
     private boolean moveRight = false;
-    private final List<Robot> robots = new ArrayList<>();
-    private final List<Cloud> clouds = new ArrayList<>();
-    private final List<BackgroundObject> backgroundObjects = new ArrayList<>();
+    private List<Robot> robots = new ArrayList<>();
+    private List<Cloud> clouds = new ArrayList<>();
+    private List<BackgroundObject> backgroundObjects = new ArrayList<>();
     private int score = 0;
     private int spawnInterval = 2000;
     private int gameTime = 0;
 
-    private final Image heroImage;
-    private final Image robotImage;
-    private final Image cloudImage;
-    private final Image grass1Image;
-    private final Image grass2Image;
-    private final Image treeImage;
+    private Image heroImage;
+    private Image robotImage;
+    private Image cloudImage;
+    private Image grass1Image;
+    private Image grass2Image;
+    private Image treeImage;
     private static final int HERO_WIDTH = 110;
     private static final int HERO_HEIGHT = 150;
     private static final int ROBOT_WIDTH = 90;
